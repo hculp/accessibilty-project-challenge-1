@@ -1,0 +1,178 @@
+/* Universal Selector adds border box and sets padding, margin to zero.*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* Sets body background color. */
+body {
+    background-color: #d9dcd6;
+}
+
+/* Sets base styling for page header */
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+/* Sets header element of page header as a block element box to fit with surrounding content in header
+   with own font size. */
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+/* Sets section inside first part of the first header element to own color
+   to highlight 'seo,' or search engine optimization for styling emphasis. */
+.header h1 .seo {
+    color: #d9dcd6;
+}
+
+/* Sets navigation to float right and added styling with padding to top and margin to right. */
+.header .links {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/* Sets navigation list type styling to none so each list element appears just as text
+   with no proceeding list icons. */
+.header .links ul {
+    list-style-type: none;
+}
+
+/* Sets navigation list on the same line with added margin nav list elements. */
+.header .links ul li{
+    display: inline;
+    margin-left: 25px;
+}
+
+/* Sets navigation element colors to white and removes and text decoration that a browser's own added style sheet might add. */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+/* Set all paragraph font size 16px. */
+p {
+    font-size: 16px;
+}
+
+/* Adds hero banner image that fits the width of the screen; added margin on bottom;
+   scales image to smallest size possible to fit container; and centers after adjusting image. */
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Sets main content container to 75% page width; block element box that allows for
+   side container for benefits selector to fit without pushing it below; and
+   added margin to left*/
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* Sets subsection containers margins 20px; padding 50px; height 300px;
+   font styling and color; and background color. */
+/* Condensed 3 id selectors together due to same functionality, but kept seperate each unique
+   selector to maintain link functionality. */
+#search-engine-optimization,
+#online-reputation-management,
+#social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* Sets subsection images max height to 200px to stay in container and uniform sizing. */
+/* Condensed 3 id selectors together due to same functionality, but kept seperate each unique
+   selector to maintain link functionality. */
+#search-engine-optimization img,
+#online-reputation-management img, 
+#social-media-marketing img {
+    max-height: 200px;
+}
+
+/* Sets subsection header margin bottom for spacing between header and paragraph and
+   font size twice the size of paragraph text. */
+#search-engine-optimization h2,
+#online-reputation-management h2, 
+#social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* Sets an element left of it's containing block with added margin to right */
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+/* Sets an element right of it's containing block with added margin to left */
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/* Sets container to 20% sceen width; heigh to 100% to fill full container space in
+   webpage view; makes sure there are no overlapping floating elements outside on either side;
+   adds text styling and background color; padding; and margin to right */
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+/* Sets margin bottom spacing between each section inside parent section and text color to white. */
+/* Consolidated 3 selectors into one due to same functionality. */
+.benefit {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+/* Sets margin bottom spacing for each header in container section and centers. */
+/* Consolidated 3 selectors into one due to same functionality. */
+.benefit h3{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Sets subsection images to block element boxes; margin top and bottom 10px, right and left auto;
+   max image width to 150px. */
+/* Consolidated 3 selectors into one due to same functionality. */
+.benefit img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/* Sets footer styling with padding; fonts; center alignment;
+   and seperate any floating outside content on either side. */
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+/* Sets footer heading font size. */
+.footer h4 {
+    font-size: 20px;
+}
